@@ -10,42 +10,37 @@
 
   forms.forEach( function(e) {
     e.addEventListener('submit', function(event) {
-      event.preventDefault();
-
       let thisForm = this;
 
-      let action = thisForm.getAttribute('action');
-      let recaptcha = thisForm.getAttribute('data-recaptcha-site-key');
-      
-      if( ! action ) {
-        displayError(thisForm, 'The form action property is not set!');
-        return;
-      }
-      thisForm.querySelector('.loading').classList.add('d-block');
-      thisForm.querySelector('.error-message').classList.remove('d-block');
-      thisForm.querySelector('.sent-message').classList.remove('d-block');
+      console.log("inside form submit event handler");
+        event.preventDefault();
 
-      let formData = new FormData( thisForm );
+        const name = document.getElementById('name').value
+        const phone = document.getElementById('phone').value
+        const email = document.getElementById('email').value
+        const service = document.getElementById('service').value
+        const message = document.getElementById('message').value
+        const subject = document.getElementById('subject').value
 
-      if ( recaptcha ) {
-        if(typeof grecaptcha !== "undefined" ) {
-          grecaptcha.ready(function() {
-            try {
-              grecaptcha.execute(recaptcha, {action: 'php_email_form_submit'})
-              .then(token => {
-                formData.set('recaptcha-response', token);
-                php_email_form_submit(thisForm, action, formData);
-              })
-            } catch(error) {
-              displayError(thisForm, error);
-            }
-          });
-        } else {
-          displayError(thisForm, 'The reCaptcha javascript API url is not loaded!')
-        }
-      } else {
-        php_email_form_submit(thisForm, action, formData);
-      }
+        thisForm.querySelector('.loading').classList.add('d-block');
+
+        // these IDs from the previous steps
+        emailjs.send('service_9wub6wl', 'emplate_1yf8dq8', {
+            subject,
+            from_name: name,
+            from_email: email,
+            message,
+            service,
+            phone
+
+        })
+        .then(function() {
+            console.log('inside SUCCESS!');
+            displaySuccess(thisForm)
+        }).catch(function(error) {
+            console.log('inside FAILED...', error);
+            displayError(thisForm,error)
+        });
     });
   });
 
@@ -78,8 +73,14 @@
 
   function displayError(thisForm, error) {
     thisForm.querySelector('.loading').classList.remove('d-block');
-    thisForm.querySelector('.error-message').innerHTML = error;
+    thisForm.querySelector('.error-message').innerHTML = JSON.stringify(error); //TODO: don't print exception to the client
     thisForm.querySelector('.error-message').classList.add('d-block');
+  }
+
+  function displaySuccessAndClear(thisForm) {
+    thisForm.querySelector('.loading').classList.remove('d-block');
+    thisForm.querySelector('.sent-message').classList.add('d-block');
+    thisForm.reset();
   }
 
 })();
