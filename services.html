@@ -44,10 +44,11 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center">
+      <a href="index.html" class=" d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="d-flex align-items-center">Nova</h1>
+        <!-- <h1 class="d-flex align-items-center">Nova</h1> -->
+        <img src="./assets/img/logo_with_white_bg.jpeg" alt="Bootstrap" width="100" height="80">
       </a>
 
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
@@ -55,29 +56,22 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html" class="active">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="services.html" class="active">Services</a></li>
+          <!-- <li><a href="services.html">Services</a></li> -->
           <!-- <li><a href="portfolio.html">Portfolio</a></li> -->
-          <li><a href="team.html">Contact</a></li>
           <!-- <li><a href="blog.html">Blog</a></li> -->
-          <!-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+          <li class="dropdown"><a href="services.html"><span>Services</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
+              <li><a href="#">Accessibility Consultation</a></li>
+              <li><a href="#">Personal Care Assistance</a></li>
+              <li><a href="#">Mobility Support</a></li>
+              <li><a href="#">Financial Assistance</a></li>
+              <li><a href="#">Support Groups</a></li>
+              <li><a href="#">Domestic Services</a></li>
             </ul>
-          </li> -->
+          </li>
+          <li><a href="team.html">Contact</a></li>
           <li><a href="contact.html">Feedback</a></li>
         </ul>
       </nav><!-- .navbar -->
@@ -126,7 +120,8 @@
               <h4 class="title"><a href="#" class="stretched-link">Dolor Sitema</a></h4>
               <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
             </div>
-          </div><!-- End Service Item -->
+          </div>
+          <!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
             <div class="icon flex-shrink-0"><i class="bi bi-bar-chart" style="color: #d90769;"></i></div>
@@ -134,7 +129,8 @@
               <h4 class="title"><a href="#" class="stretched-link">Sed ut perspiciatis</a></h4>
               <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
             </div>
-          </div><!-- End Service Item -->
+          </div>
+          <!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
             <div class="icon flex-shrink-0"><i class="bi bi-binoculars" style="color: #15bfbc;"></i></div>
@@ -142,7 +138,8 @@
               <h4 class="title"><a href="#" class="stretched-link">Magni Dolores</a></h4>
               <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
             </div>
-          </div><!-- End Service Item -->
+          </div>
+          <!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
             <div class="icon flex-shrink-0"><i class="bi bi-brightness-high" style="color: #f5cf13;"></i></div>
@@ -150,7 +147,8 @@
               <h4 class="title"><a href="#" class="stretched-link">Nemo Enim</a></h4>
               <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
             </div>
-          </div><!-- End Service Item -->
+          </div>
+          <!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
             <div class="icon flex-shrink-0"><i class="bi bi-calendar4-week" style="color: #1335f5;"></i></div>
@@ -158,7 +156,8 @@
               <h4 class="title"><a href="#" class="stretched-link">Eiusmod Tempor</a></h4>
               <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
             </div>
-          </div><!-- End Service Item -->
+          </div>
+          <!-- End Service Item -->
 
         </div>
 
@@ -171,7 +170,7 @@
 
         <div class="row gy-4">
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
             <div class="card-item">
               <div class="row">
                 <div class="col-xl-5">
@@ -179,15 +178,17 @@
                 </div>
                 <div class="col-xl-7 d-flex align-items-center">
                   <div class="card-body">
-                    <h4 class="card-title">Eligendi omnis sunt veritatis.</h4>
-                    <p>Fuga in dolorum et iste et culpa. Commodi possimus nesciunt modi voluptatem placeat deleniti adipisci. Cum delectus doloribus non veritatis. Officia temporibus illo magnam. Dolor eos et.</p>
+                    <h4 class="card-title">Accessibility Consultation</h4>
+                    <p>We, “Yes We Care” specializes in providing comprehensive Accessibility Consultation services designed to enhance the living, working, and recreational environments for individuals with disabilities. Our expert consultants conduct thorough assessments of physical spaces, to identify and eliminate barriers to accessibility.</p>
+                    <br/>
+                    <p>We work closely with our clients to understand their unique needs and challenges, offering tailored recommendations for modifications and assistive technologies that promote independence and inclusivity.</p>
                   </div>
                 </div>
               </div>
             </div>
           </div><!-- End Card Item -->
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-12" data-aos="fade-up" data-aos-delay="200">
             <div class="card-item">
               <div class="row">
                 <div class="col-xl-5">
@@ -195,15 +196,21 @@
                 </div>
                 <div class="col-xl-7 d-flex align-items-center">
                   <div class="card-body">
-                    <h4 class="card-title">Possimus ut sed velit assumenda</h4>
-                    <p>Sunt deserunt maiores voluptatem autem est rerum perferendis rerum blanditiis. Est laboriosam qui iste numquam laboriosam voluptatem architecto. Est laudantium sunt at quas aut hic. Eum dignissimos.</p>
+                    <h4 class="card-title">Personal Care Assistance</h4>
+                    <p>We are dedicated to providing compassionate and professional Personal Care Assistance services tailored to meet the unique needs of individuals with disabilities. We understand the importance of maintaining independence and dignity, and our highly trained caregivers are committed to offering support in various activities of daily living.</p>
+                    <p>
+                      <ui>
+                        <li>Personal Hygiene: Assistance with bathing, grooming, and maintaining personal cleanliness to ensure the individual's comfort and well-being.</li>
+                        <li>Grooming activities: Helping with dressing and clothing choices, considering individual preferences and ensuring comfort.</li>
+                      </ui>
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
           </div><!-- End Card Item -->
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="col-lg-12" data-aos="fade-up" data-aos-delay="300">
             <div class="card-item">
               <div class="row">
                 <div class="col-xl-5">
@@ -219,7 +226,7 @@
             </div>
           </div><!-- End Card Item -->
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+          <div class="col-lg-12" data-aos="fade-up" data-aos-delay="400">
             <div class="card-item">
               <div class="row">
                 <div class="col-xl-5">
