@@ -56,19 +56,19 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <!-- <li><a href="services.html">Services</a></li> -->
           <!-- <li><a href="portfolio.html">Portfolio</a></li> -->
           <!-- <li><a href="blog.html">Blog</a></li> -->
-          <li class="dropdown"><a href="services.html"><span>Services</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+          <li class="dropdown"><a href="services.html"  class="active"><span>Services</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
-              <li><a href="#">Accessibility Consultation</a></li>
-              <li><a href="#">Personal Care Assistance</a></li>
-              <li><a href="#">Mobility Support</a></li>
-              <li><a href="#">Financial Assistance</a></li>
-              <li><a href="#">Support Groups</a></li>
-              <li><a href="#">Domestic Services</a></li>
+              <li><a href="#service_accessibility_consulation">Accessibility Consultation</a></li>
+              <li><a href="#personal_care_assistance">Personal Care Assistance</a></li>
+              <li><a href="#mobility_support">Mobility Support</a></li>
+              <li><a href="#financial_assistance">Financial Assistance</a></li>
+              <li><a href="#support_groups">Support Groups</a></li>
+              <li><a href="#domestic_services">Domestic Services</a></li>
             </ul>
           </li>
           <li><a href="team.html">Contact</a></li>
@@ -94,12 +94,37 @@
       </div>
     </div><!-- End Breadcrumbs -->
 
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row gy-4" data-aos="fade-up">
+          <div class="col-lg-4">
+            <img src="assets/img/about.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8">
+            <div class="content ps-lg-5">
+              <h3>Our Mission</h3>
+              <p>
+                Our mission is to empower individuals with disabilities by providing comprehensive and personalized services that enhance their quality of life, foster independence, and promote inclusivity. We are committed to understanding the unique needs of each individual, offering tailored solutions across various domains, and creating a supportive community that champions the rights and well-being of people with disabilities.
+              </p>
+              <!-- <ul>
+                <li><i class="bi bi-check-circle-fill"></i> Aiming to elevate their quality of life, foster independence, and champion inclusivity.</li>
+                <li><i class="bi bi-check-circle-fill"></i> Prioritize understanding the unique needs across diverse areas.</li>
+                <li><i class="bi bi-check-circle-fill"></i> Cultivating a supportive community dedicated to upholding the rights and well-being.</li>
+              </ul> -->
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
     <!-- ======= Our Services Section ======= -->
-    <section id="services-list" class="services-list">
+    <!-- <section id="services-list" class="services-list">
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
-          <h2>Our Services</h2>
+          <h2>Our Mission</h2>
 
         </div>
 
@@ -111,66 +136,71 @@
               <h4 class="title"><a href="#" class="stretched-link">Lorem Ipsum</a></h4>
               <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
             </div>
-          </div>
+          </div> -->
           <!-- End Service Item -->
-
+<!-- 
           <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
             <div class="icon flex-shrink-0"><i class="bi bi-card-checklist" style="color: #15a04a;"></i></div>
             <div>
               <h4 class="title"><a href="#" class="stretched-link">Dolor Sitema</a></h4>
               <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
             </div>
-          </div>
+          </div> -->
           <!-- End Service Item -->
 
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
+          <!-- <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
             <div class="icon flex-shrink-0"><i class="bi bi-bar-chart" style="color: #d90769;"></i></div>
             <div>
               <h4 class="title"><a href="#" class="stretched-link">Sed ut perspiciatis</a></h4>
               <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
             </div>
-          </div>
+          </div> -->
           <!-- End Service Item -->
 
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
+          <!-- <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
             <div class="icon flex-shrink-0"><i class="bi bi-binoculars" style="color: #15bfbc;"></i></div>
             <div>
               <h4 class="title"><a href="#" class="stretched-link">Magni Dolores</a></h4>
               <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
             </div>
-          </div>
+          </div> -->
           <!-- End Service Item -->
 
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
+          <!-- <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
             <div class="icon flex-shrink-0"><i class="bi bi-brightness-high" style="color: #f5cf13;"></i></div>
             <div>
               <h4 class="title"><a href="#" class="stretched-link">Nemo Enim</a></h4>
               <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
             </div>
-          </div>
+          </div> -->
           <!-- End Service Item -->
 
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
+          <!-- <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
             <div class="icon flex-shrink-0"><i class="bi bi-calendar4-week" style="color: #1335f5;"></i></div>
             <div>
               <h4 class="title"><a href="#" class="stretched-link">Eiusmod Tempor</a></h4>
               <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
             </div>
-          </div>
+          </div> -->
           <!-- End Service Item -->
 
-        </div>
+        <!-- </div> -->
 
-      </div>
-    </section><!-- End Our Services Section -->
+      <!-- </div> -->
+    <!-- </section> -->
+    <!-- End Our Services Section -->
 
     <!-- ======= Services Cards Section ======= -->
     <section id="services-cards" class="services-cards">
+      <div class="section-header">
+        <h2>Our Services</h2>
+
+      </div>
       <div class="container" data-aos="fade-up">
 
         <div class="row gy-4">
 
-          <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100" id="service_accessibility_consulation">
             <div class="card-item">
               <div class="row">
                 <div class="col-xl-5">
@@ -188,7 +218,7 @@
             </div>
           </div><!-- End Card Item -->
 
-          <div class="col-lg-12" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-12" data-aos="fade-up" data-aos-delay="200" id="personal_care_assistance">
             <div class="card-item">
               <div class="row">
                 <div class="col-xl-5">
@@ -214,7 +244,7 @@
             </div>
           </div><!-- End Card Item -->
 
-          <div class="col-lg-12" data-aos="fade-up" data-aos-delay="300">
+          <div class="col-lg-12" data-aos="fade-up" data-aos-delay="300" id="mobility_support">
             <div class="card-item">
               <div class="row">
                 <div class="col-xl-5">
@@ -230,7 +260,7 @@
             </div>
           </div><!-- End Card Item -->
 
-          <div class="col-lg-12" data-aos="fade-up" data-aos-delay="400">
+          <div class="col-lg-12" data-aos="fade-up" data-aos-delay="400" id="financial_assistance">
             <div class="card-item">
               <div class="row">
                 <div class="col-xl-5">
@@ -246,7 +276,7 @@
             </div>
           </div><!-- End Card Item -->
 
-          <div class="col-lg-12" data-aos="fade-up" data-aos-delay="400">
+          <div class="col-lg-12" data-aos="fade-up" data-aos-delay="400" id="support_groups">
             <div class="card-item">
               <div class="row">
                 <div class="col-xl-5">
@@ -269,7 +299,7 @@
             </div>
           </div><!-- End Card Item -->
 
-          <div class="col-lg-12" data-aos="fade-up" data-aos-delay="400">
+          <div class="col-lg-12" data-aos="fade-up" data-aos-delay="400" id="domestic_services">
             <div class="card-item">
               <div class="row">
                 <div class="col-xl-5">
@@ -316,11 +346,11 @@
                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
                 <p>
-                  I can't express enough gratitude for the exceptional services provided by this company. Their commitment to addressing the unique needs of individuals with disabilities is truly commendable. From accessibility consultations to personalized care assistance, they have transformed my daily life, promoting independence and fostering a supportive environment. Highly recommended!
+                  I can't express enough gratitude for the exceptional services provided by this company. Their commitment to addressing the unique needs of individuals like me is truly commendable. From accessibility consultations to personalized care assistance, they have transformed my daily life, promoting independence and fostering a supportive environment. Highly recommended!
                 </p>
                 <div class="profile mt-auto">
-                  <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                  <h3>Saul Goodman</h3>
+                  <!-- <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt=""> -->
+                  <h3>Sophie Smith</h3>
                   <h4>Service Recipient</h4>
                 </div>
               </div>
@@ -335,8 +365,8 @@
                   As a family member of an individual with a disability, I am immensely impressed by the comprehensive support this company offers. The team's dedication to enhancing the quality of life for my loved one is evident in every service provided. From accessible transportation to emotional support, they have become an invaluable partner in our journey.
                 </p>
                 <div class="profile mt-auto">
-                  <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                  <h3>Sara Wilsson</h3>
+                  <!-- <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt=""> -->
+                  <h3>Noah Wilson</h3>
                   <h4>Family Member</h4>
                 </div>
               </div>
@@ -351,8 +381,8 @@
                   I've had the privilege of witnessing the positive impact of this company's services on the disability community. Their commitment to advocacy, accessible mobility, and educational support is making a significant difference in the lives of many. A reliable and compassionate ally for individuals with disabilities and their families.
                 </p>
                 <div class="profile mt-auto">
-                  <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                  <h3>Jena Karlis</h3>
+                  <!-- <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt=""> -->
+                  <h3>Ella Thompson</h3>
                   <h4> Community Advocate</h4>
                 </div>
               </div>
@@ -367,8 +397,8 @@
                   Working with this company has been an enriching experience. Their commitment to creating inclusive environments through accessibility consultations is evident in every project. They prioritize understanding the unique needs of each client, ensuring that spaces are not just accessible but truly welcoming. A leader in promoting universal design principles.
                 </p>
                 <div class="profile mt-auto">
-                  <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                  <h3>Matt Brandon</h3>
+                  <!-- <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt=""> -->
+                  <h3>Lucas Anderson</h3>
                   <h4>Accessibility Consultant</h4>
                 </div>
               </div>
@@ -383,8 +413,8 @@
                   I am grateful for the financial assistance and planning support provided by this company. Navigating the financial landscape with a disability can be challenging, but their knowledgeable and caring team guided me through the process, offering solutions that have positively impacted my financial stability. Thank you for empowering individuals like me.
                 </p>
                 <div class="profile mt-auto">
-                  <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                  <h3>John Larson</h3>
+                  <!-- <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt=""> -->
+                  <h3>Mia Harris</h3>
                   <h4>Financial Assistance Recipient</h4>
                 </div>
               </div>
@@ -433,12 +463,12 @@
           <div class="col-lg-3 col-6 footer-links">
             <h4>Our Services</h4>
             <ul>
-              <li><i class="bi bi-dash"></i> <a href="services.html/test123">Accessibility Consultation</a></li>
-              <li><i class="bi bi-dash"></i> <a href="services.html/">Personal Care Assistance</a></li>
-              <li><i class="bi bi-dash"></i> <a href="services.html/">Mobility Support</a></li>
-              <li><i class="bi bi-dash"></i> <a href="services.html/">Financial Assistance</a></li>
-              <li><i class="bi bi-dash"></i> <a href="services.html/">Support Groups</a></li>
-              <li><i class="bi bi-dash"></i> <a href="services.html/">Domestic Services</a></li>
+              <li><i class="bi bi-dash"></i> <a href="services.html#service_accessibility_consulation">Accessibility Consultation</a></li>
+              <li><i class="bi bi-dash"></i> <a href="services.html#personal_care_assistance">Personal Care Assistance</a></li>
+              <li><i class="bi bi-dash"></i> <a href="services.html#mobility_support">Mobility Support</a></li>
+              <li><i class="bi bi-dash"></i> <a href="services.html#financial_assistance">Financial Assistance</a></li>
+              <li><i class="bi bi-dash"></i> <a href="services.html#support_groups">Support Groups</a></li>
+              <li><i class="bi bi-dash"></i> <a href="services.html#domestic_services">Domestic Services</a></li>
             </ul>
           </div>
 
