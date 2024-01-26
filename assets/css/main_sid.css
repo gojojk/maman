@@ -1,0 +1,126 @@
+.a_aboutus {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.a_aboutus:hover {
+  color: rgba(var(--primary-color-rgb), 0.7);
+  text-decoration: none;
+}
+
+
+
+/* About Section - Home Page
+------------------------------*/
+.about_sid {
+  --background-color: #f4f4f4;
+}
+
+.about_sid .content_aboutus .h3_aboutus {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  padding: 10px 20px;
+  background: rgba(var(--primary-color-rgb), 0.05);
+  color: var(--primary-color);
+  border-radius: 7px;
+  display: inline-block;
+}
+
+.about_sid .content_aboutus .h2_aboutus {
+  font-weight: 700;
+}
+
+.about_sid .content_aboutus .p_aboutus:last-child {
+  margin-bottom: 0;
+}
+
+.about_sid .content_aboutus .read-more_aboutus {
+  background: var(--primary-color);
+  color: var(--contrast-color);
+  font-family: var(--heading-font);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  padding: 12px 24px;
+  border-radius: 5px;
+  transition: 0.3s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about_sid .content_aboutus .read-more_aboutus i {
+  font-size: 18px;
+  margin-left: 5px;
+  line-height: 0;
+  transition: 0.3s;
+}
+
+.about_sid .content_aboutus .read-more_aboutus:hover {
+  background: rgba(var(--primary-color-rgb), 0.8);
+  padding-right: 19px;
+}
+
+.about_sid .content_aboutus .read-more_aboutus:hover i {
+  margin-left: 10px;
+}
+
+.about_sid .icon-box_aboutus {
+  padding: 50px 40px;
+  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transition: all 0.3s ease-out 0s;
+  background-color: #fff;
+}
+
+.about_sid .icon-box_aboutus .i_aboutus {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+  font-size: 32px;
+  line-height: 0;
+  transition: all 0.4s ease-out 0s;
+  background-color: rgba(var(--primary-color-rgb), 0.05);
+  color: var(--primary-color);
+}
+
+.about_sid .icon-box_aboutus .h3_aboutus {
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.about_sid .icon-box_aboutus .p_aboutus {
+  margin-bottom: 0;
+}
+
+.about_sid .icon-box_aboutus:hover .i_aboutus {
+  background-color: var(--primary-color);
+  color: var(--contrast-color);
+}
+
+.about_sid .icon-boxes_aboutus .col-md-6:nth-child(2) .icon-box_aboutus,
+.about_sid .icon-boxes_aboutus .col-md-6:nth-child(4) .icon-box_aboutus {
+  margin-top: -40px;
+}
+
+@media (max-width: 768px) {
+
+  .about_sid .icon-boxes_aboutus .col-md-6:nth-child(2) .icon-box_aboutus,
+  .about_sid .icon-boxes_aboutus .col-md-6:nth-child(4) .icon-box_aboutus {
+    margin-top: 0;
+  }
+}
+
+.section_aboutus {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  padding: 60px 0;
+  overflow: clip;
+}
