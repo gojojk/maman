@@ -25,7 +25,7 @@
         thisForm.querySelector('.loading').classList.add('d-block');
 
         // these IDs from the previous steps
-        emailjs.send('service_9wub6wl', 'emplate_1yf8dq8', {
+        emailjs.send('service_9wub6wl', 'template_1yf8dq8', {
             subject,
             from_name: name,
             from_email: email,
@@ -36,7 +36,7 @@
         })
         .then(function() {
             console.log('inside SUCCESS!');
-            displaySuccess(thisForm)
+            displaySuccessAndClear(thisForm)
         }).catch(function(error) {
             console.log('inside FAILED...', error);
             displayError(thisForm,error)
