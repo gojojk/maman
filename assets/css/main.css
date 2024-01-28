@@ -495,7 +495,7 @@ section {
 .hero {
   width: 100%;
   min-height: 100vh;
-  background: url("../img/hero-bg.jpg") top center;
+  background: url("../img/home-page-7.jpg") top center;
   background-size: cover;
   position: relative;
   padding: 120px 0;
@@ -538,7 +538,7 @@ section {
 
 .hero h2 {
   margin: 0;
-  font-size: 48px;
+  font-size: 38px;
   font-weight: 700;
   line-height: 1.2;
   color: #fff;
