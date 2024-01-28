@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Yes We Care</title>
+  <title>Yes We Care Community Services</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -190,6 +190,16 @@
       <!-- </div> -->
     <!-- </section> -->
     <!-- End Our Services Section -->
+
+    <script>
+        function scrollToMiddle(sectionId) {
+          var section = document.getElementById(sectionId);
+          if (section) {
+              var middle = section.offsetTop + section.offsetHeight / 2 - window.innerHeight / 2;
+              window.scrollTo(0, middle);
+          }
+        }
+    </script>
 
     <!-- ======= Services Cards Section ======= -->
     <section id="services-cards" class="services-cards">
@@ -465,7 +475,7 @@
             <h4>Our Services</h4>
             <ul>
               <li><i class="bi bi-dash"></i> <a href="services.html#service_accessibility_consulation">Accessibility Consultation</a></li>
-              <li><i class="bi bi-dash"></i> <a href="services.html#personal_care_assistance">Personal Care Assistance</a></li>
+              <li><i class="bi bi-dash"></i> <a href="services.html#personal_care_assistance" onclick="scrollToMiddle('personal_care_assistance')">Personal Care Assistance</a></li>
               <li><i class="bi bi-dash"></i> <a href="services.html#mobility_support">Mobility Support</a></li>
               <li><i class="bi bi-dash"></i> <a href="services.html#financial_assistance">Financial Assistance</a></li>
               <li><i class="bi bi-dash"></i> <a href="services.html#support_groups">Support Groups</a></li>
@@ -479,7 +489,7 @@
               A108 Adam Street <br>
               Adelaide, South Australia<br>
               Australia <br><br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
+              <strong>Phone:</strong> +1 5589 55488<br>
               <strong>Email:</strong> info@yeswecare.com<br>
             </p>
 
@@ -492,7 +502,7 @@
     <div class="footer-legal">
       <div class="container">
         <div class="copyright">
-          &copy; Copyright <strong><span>Yes We Care</span></strong>. All Rights Reserved
+          &copy; Copyright <strong><span>Yes We Care Community Services</span></strong>. All Rights Reserved
         </div>
         <!-- <div class="credits"> -->
           <!-- All the links in the footer should remain intact. -->
