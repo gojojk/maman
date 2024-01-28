@@ -25,7 +25,7 @@
       thisForm.querySelector('.loading').classList.add('d-block');
 
       // these IDs from the previous steps
-      emailjs.send(process.env.SERVICE_ID, process.env.TEMPLATE_ID, { 
+      emailjs.send('service_9wub6wl', 'template_1yf8dq8', { 
         subject,
         from_name: name,
         from_email: email,
