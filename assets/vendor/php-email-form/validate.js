@@ -21,6 +21,7 @@
       const service = document.getElementById('service').value
       const message = document.getElementById('message').value
       const subject = document.getElementById('subject').value
+      const token = grecaptcha.getResponse()
 
       thisForm.querySelector('.loading').classList.add('d-block');
 
@@ -31,8 +32,8 @@
         from_email: email,
         message,
         service,
-        phone
-
+        phone,
+        'g-recaptcha-response': token
       })
       .then(function () {
         console.log('inside SUCCESS!');
