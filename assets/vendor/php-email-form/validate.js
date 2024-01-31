@@ -24,6 +24,15 @@
       const token = grecaptcha.getResponse()
 
       thisForm.querySelector('.loading').classList.add('d-block');
+      thisForm.querySelector('.error-message').classList.remove('d-block');
+      thisForm.querySelector('.sent-message').classList.remove('d-block');
+
+      if(token.length === 0) {
+        displayError(thisForm, {
+          text: "The g-recaptcha-response parameter not found"
+        })
+        return;
+      }
 
       // these IDs from the previous steps
       emailjs.send('service_9wub6wl', 'template_1yf8dq8', { 
@@ -47,12 +56,17 @@
 
   function displayError(thisForm, error) {
     thisForm.querySelector('.loading').classList.remove('d-block');
-    thisForm.querySelector('.error-message').innerHTML = JSON.stringify(error); //TODO: don't print exception to the client
+    thisForm.querySelector('.sent-message').classList.remove('d-block');
     thisForm.querySelector('.error-message').classList.add('d-block');
+    if (error.text.includes("The g-recaptcha-response parameter not found"))
+      thisForm.querySelector('.error-message').innerHTML = "Please confirm that you are not a robot";
+    else
+      thisForm.querySelector('.error-message').innerHTML = "Some unknown error occurred, please try after sometime"; //TODO: don't print exception to the client
   }
 
   function displaySuccessAndClear(thisForm) {
     thisForm.querySelector('.loading').classList.remove('d-block');
+    thisForm.querySelector('.error-message').classList.remove('d-block');
     thisForm.querySelector('.sent-message').classList.add('d-block');
     thisForm.reset();
   }
